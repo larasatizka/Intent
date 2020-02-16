@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.polinema.intent"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".ProfileParcelableActivity"
+            android:label="Profile Parcelable"
+            android:parentActivityName=".ParcelableActivity"
+            />
+        <activity
+            android:name=".BundleActivity"
+            android:label="Android Bundle"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".ProfileBundleActivity"
+            android:label="Profile Android Bundle"
+            android:parentActivityName=".BundleActivity"
+            />
+        <activity
+            android:name=".ParcelableActivity"
+            android:label="Parcelable"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".ImplicitIntentActivity"
+            android:label="Implicit Intent"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".ExplicitIntentActivity"
+            android:label="Explicit Intent"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:label="Intent Demo"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
